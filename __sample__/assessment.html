@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>Assessment-html</title>
+
+</head>
+
+<body>
+
+  <script>
+    var counter = 10;
+    var numbers = [];
+    for (var i = 0; i < 10; i++) {
+      counter += 73;
+      numbers.push(counter);
+    }
+    console.log(numbers);
+    if (counter < 740) {
+      console.log('Maximum array number exceeded');
+    } else {
+      console.log('Array values within spefication');
+    }
+    var stats = {};
+    const statsObj = { largestNum: 1, arrTotal: 0, arrAverage: 0 };
+    var numbersArr = [];
+    function getStats(statsObj, numbersArr) {
+      for (var i = 0; i < numbersArr.length; i++) {
+        // if (numbers[i] > statsObj.largestNum) { // something wrong with the if statement and i cant figure out how i can fix it.
+        statsObj.largestNum = numbersArr[i];
+      }
+      console.log(statsObj);
+
+      var arrTotal = 0;
+      for (i = 0; i < numbersArr.length; i++) {
+        arrTotal += numbersArr[i];
+      }
+      console.log(arrTotal);
+
+      var arrAverage = arrTotal / numbersArr.length;
+      console.log(arrAverage);
+
+      statsObj.averageNum = arrAverage;
+      console.log(statsObj);
+
+      return statsObj;
+
+    }
+
+    getStats(stats, numbers);
+    var returnedStats = getStats;
+    console.log('the largest number is 740 and the average number of all numbers is 411.5');
+  </script>
+
+
+
+</body>
+
+
+
+
+</html>
