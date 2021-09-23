@@ -7,35 +7,62 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Display Properties</title>
   <style>
+    div {
+      display: block;
+      border: 4px solid blue;
+    }
 
+    span {
+      display: inline;
+      border: 4px solid green;
+      height: 100px;
+      width: 100px;
+    }
+
+    button {
+      display: inline-block;
+      border: 4px solid red;
+      height: 40px;
+      width: 200px;
+    }
+
+    ul {
+      display: block;
+      border: 4px solid purple;
+    }
+
+    li {
+      display: inline;
+      border: 4px solid magenta;
+    }
   </style>
 
 </head>
 
 <body>
-  <div style="border: 4px solid blue;">I am a div and by default I am block, which means I take up all the space i can horizontally.</div>
-  <div style="border: 4px solid blue;">
-    I am a div but I have <span style="border: 4px solid green; display: inline; height: 100px; width: 100px;">span elements inside me</span>.
-    span elements are <span style="border: 4px solid green; display: inline; height: 100px; width: 100px;">diplay inline by default</span>,
+  <div>I am a div and by default I am block, which means I take up all the space I can horizontally.</div>
+  <div>
+    I am a div but I have <span>span elements inside me</span>.
+    span elements are <span>diplay inline by default</span>,
     so they only take up as much space as they need.
   </div>
-  <div style="border: 4px solid blue;">
-    <button style="border: 4px solid red; height: 40px; width: 200px;">Hello!</button>
-    <button style="border: 4px solid red; height: 40px; width: 200px;">buttons are</button>
-    <button style="border: 4px solid red; height: 40px; width: 200px;">Inline block</button>
-    <button style="border: 4px solid red; height: 40px; width: 200px;">By Default</button>
+  <div>
+    <button>Hello!</button>
+    <button>buttons are</button>
+    <button>Inline block</button>
+    <button>By Default</button>
   </div>
-  <ul style="border: 4px solid purple;">
-    <li style="border: 4px solid magenta; display: inline;">
+  <ul>
+    <li>
       home
     </li>
-    <li style="border: 4px solid magenta; display: inline;">
+    <li>
       Products
     </li>
-    <li style="border: 4px solid magenta; display: inline;">
+    <li>
       About Us
     </li>
-    <li style="border: 4px solid magenta; display: inline;">
+    <li>
       Contact Us
     </li>
   </ul>
