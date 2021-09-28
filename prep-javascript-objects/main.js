@@ -5,7 +5,7 @@ var person = {
 };
 console.log(person);
 
-var fullName = 'Moamel Hashim.';
+var fullName = person.firstName + ' ' + person.lastName;
 
 console.log(fullName);
 
@@ -13,6 +13,6 @@ person.job = 'Trying to survive.';
 
 console.log(person.job);
 
-person.previousJob = 'Flipping burgers at Crusty Crabs.';
+person.previousJob = 'Flipping burgers at Krusty Krabs.';
 
 console.log(person.previousJob);
