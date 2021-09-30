@@ -7,7 +7,7 @@
 // console.log('sum', sum);
 
 function addTwoNumbers(num1, num2) {
-  return 1 + 2;
+  return num1 + num2;
 }
 var addTwoNumbersResult = addTwoNumbers(1, 2);
 console.log('adding two numbers:', addTwoNumbersResult);
@@ -29,7 +29,7 @@ console.log('greeting:', helloWorld);
 function multiplyAndDivideBy5(num1, num2) {
   return num1 * num2 / 5;
 }
-var divide = multiplyAndDivideBy5(10, 9, 5);
+var divide = multiplyAndDivideBy5(10, 9);
 console.log('divide:', divide);
 
 function subtractTwoNumbers(num1, num2) {
